@@ -12,13 +12,11 @@ struct NavView: View {
         NavigationView{
             VStack {
                 HeaderView()
-                    
-                        
-                   
+                    .padding(.horizontal, 16)
+                
                 NavigationDetailView()
-            }
-        }
-        
+            } // VStack
+        } // NavigationView
     }
 }
 

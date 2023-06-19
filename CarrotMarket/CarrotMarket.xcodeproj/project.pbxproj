@@ -15,6 +15,7 @@
 		3EBC851E2A3F0BA900EC6986 /* NavigationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBC851D2A3F0BA900EC6986 /* NavigationModel.swift */; };
 		3EBC85202A40729800EC6986 /* NavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBC851F2A40729800EC6986 /* NavView.swift */; };
 		3EBC85222A4076B300EC6986 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBC85212A4076B300EC6986 /* HeaderView.swift */; };
+		3EBC85242A40AFCE00EC6986 /* HeaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBC85232A40AFCE00EC6986 /* HeaderModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		3EBC851D2A3F0BA900EC6986 /* NavigationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModel.swift; sourceTree = "<group>"; };
 		3EBC851F2A40729800EC6986 /* NavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavView.swift; sourceTree = "<group>"; };
 		3EBC85212A4076B300EC6986 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		3EBC85232A40AFCE00EC6986 /* HeaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				3EBC851D2A3F0BA900EC6986 /* NavigationModel.swift */,
+				3EBC85232A40AFCE00EC6986 /* HeaderModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -166,6 +169,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EBC850E2A3F09FC00EC6986 /* ContentView.swift in Sources */,
+				3EBC85242A40AFCE00EC6986 /* HeaderModel.swift in Sources */,
 				3EBC85222A4076B300EC6986 /* HeaderView.swift in Sources */,
 				3EBC851E2A3F0BA900EC6986 /* NavigationModel.swift in Sources */,
 				3EBC85202A40729800EC6986 /* NavView.swift in Sources */,
