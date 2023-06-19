@@ -10,48 +10,43 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
             TabView {
-                NavigationView()
+                NavView()
                     .tabItem{
-                        Image(systemName: "house.fill")
+                        Image("ImageIcon1")
                         Text("홈")
                     }
                     .tag(0)
                 
                 Text("동네 생활")
                     .tabItem{
-                        Image(systemName: "home")
+                        Image("ImageIcon2")
                         Text("동네생활")
                     }
                     .tag(1)
                 
                 Text("내 근처")
                     .tabItem{
-                        Image(systemName: "home")
+                        Image("ImageIcon3")
                         Text("내 근처")
                     }
                     .tag(2)
                 
                 Text("채팅")
                     .tabItem{
-                        Image(systemName: "home")
+                        Image("ImageIcon4")
                         Text("동네생활")
                     }
                     .tag(3)
                 
                 Text("나의 당근")
                     .tabItem{
-                        Image(systemName: "home")
+                        Image("ImageIcon5")
                         Text("동네생활")
                     }
                     .tag(4)
                 
             } // TabView
             .tint(.black)
-            .toolbar {
-                Image(systemName: "magnifyingglass")
-                Image(systemName: "heart.fill")
-                Image(systemName: "heart.fill")
-            }
     }
 }
 

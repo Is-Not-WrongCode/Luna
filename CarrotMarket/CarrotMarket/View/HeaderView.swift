@@ -10,7 +10,9 @@ import SwiftUI
 struct HeaderView: View {
     var body: some View {
         HStack (spacing: 0){
-            Text("Header View")
+            Image(systemName: "magnifyingglass")
+            Image(systemName: "heart.fill")
+            Image(systemName: "heart.fill")
         }
     }
 }
