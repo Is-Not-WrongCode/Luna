@@ -13,6 +13,8 @@
 		3EBC85132A3F09FD00EC6986 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3EBC85122A3F09FD00EC6986 /* Preview Assets.xcassets */; };
 		3EBC851A2A3F0B4600EC6986 /* NavigationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBC85192A3F0B4600EC6986 /* NavigationDetailView.swift */; };
 		3EBC851E2A3F0BA900EC6986 /* NavigationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBC851D2A3F0BA900EC6986 /* NavigationModel.swift */; };
+		3EBC85202A40729800EC6986 /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBC851F2A40729800EC6986 /* NavigationView.swift */; };
+		3EBC85222A4076B300EC6986 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBC85212A4076B300EC6986 /* HeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		3EBC85122A3F09FD00EC6986 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3EBC85192A3F0B4600EC6986 /* NavigationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationDetailView.swift; sourceTree = "<group>"; };
 		3EBC851D2A3F0BA900EC6986 /* NavigationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationModel.swift; sourceTree = "<group>"; };
+		3EBC851F2A40729800EC6986 /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
+		3EBC85212A4076B300EC6986 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +80,8 @@
 		3EBC851B2A3F0B5800EC6986 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3EBC85212A4076B300EC6986 /* HeaderView.swift */,
+				3EBC851F2A40729800EC6986 /* NavigationView.swift */,
 				3EBC85192A3F0B4600EC6986 /* NavigationDetailView.swift */,
 			);
 			path = View;
@@ -160,7 +166,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3EBC850E2A3F09FC00EC6986 /* ContentView.swift in Sources */,
+				3EBC85222A4076B300EC6986 /* HeaderView.swift in Sources */,
 				3EBC851E2A3F0BA900EC6986 /* NavigationModel.swift in Sources */,
+				3EBC85202A40729800EC6986 /* NavigationView.swift in Sources */,
 				3EBC851A2A3F0B4600EC6986 /* NavigationDetailView.swift in Sources */,
 				3EBC850C2A3F09FC00EC6986 /* CarrotMarketApp.swift in Sources */,
 			);

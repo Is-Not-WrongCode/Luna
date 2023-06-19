@@ -8,12 +8,31 @@
 import SwiftUI
 
 struct NavigationDetailView: View {
+    
     var body: some View {
-        NavigationLink {
-            // Destinaton
-        } label: {
-            Text("navigation test!")
-        }
+        ScrollView {
+            ForEach(NavigationData) { nd in
+                NavigationLink {
+                    // Destinaton
+                } label: {
+                    HStack (spacing: 0){
+                        Image(nd.imageName)
+                            .border(.red)
+                        
+                        VStack(alignment: .leading, spacing: 0) {
+                            Text(nd.title)
+                            Text("\(nd.place)⸱\(nd.timeAgo)")
+                            Text(nd.price)
+                            HStack {
+                                Spacer()
+                            }
+                        }
+                        .frame(maxWidth: .infinity)
+                        .border(.blue)
+                    } // HStack
+                }
+            } // ForEach
+        } // ScrollView
     }
 }
 
