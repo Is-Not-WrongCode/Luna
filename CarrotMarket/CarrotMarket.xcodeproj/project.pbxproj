@@ -17,6 +17,8 @@
 		3EBC85222A4076B300EC6986 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBC85212A4076B300EC6986 /* HeaderView.swift */; };
 		3EBC85242A40AFCE00EC6986 /* HeaderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBC85232A40AFCE00EC6986 /* HeaderModel.swift */; };
 		3EBC85262A417C3200EC6986 /* AdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBC85252A417C3200EC6986 /* AdView.swift */; };
+		3EBC852B2A41813400EC6986 /* ADDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBC852A2A41813400EC6986 /* ADDetailView.swift */; };
+		3EBC852D2A418A1700EC6986 /* ADModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EBC852C2A418A1700EC6986 /* ADModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		3EBC85212A4076B300EC6986 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		3EBC85232A40AFCE00EC6986 /* HeaderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderModel.swift; sourceTree = "<group>"; };
 		3EBC85252A417C3200EC6986 /* AdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdView.swift; sourceTree = "<group>"; };
+		3EBC852A2A41813400EC6986 /* ADDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADDetailView.swift; sourceTree = "<group>"; };
+		3EBC852C2A418A1700EC6986 /* ADModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,7 @@
 			children = (
 				3EBC851D2A3F0BA900EC6986 /* NavigationModel.swift */,
 				3EBC85232A40AFCE00EC6986 /* HeaderModel.swift */,
+				3EBC852C2A418A1700EC6986 /* ADModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				3EBC85252A417C3200EC6986 /* AdView.swift */,
+				3EBC852A2A41813400EC6986 /* ADDetailView.swift */,
 			);
 			path = AD;
 			sourceTree = "<group>";
@@ -201,8 +207,10 @@
 				3EBC851E2A3F0BA900EC6986 /* NavigationModel.swift in Sources */,
 				3EBC85202A40729800EC6986 /* NavView.swift in Sources */,
 				3EBC851A2A3F0B4600EC6986 /* NavigationDetailView.swift in Sources */,
+				3EBC852D2A418A1700EC6986 /* ADModel.swift in Sources */,
 				3EBC850C2A3F09FC00EC6986 /* CarrotMarketApp.swift in Sources */,
 				3EBC85262A417C3200EC6986 /* AdView.swift in Sources */,
+				3EBC852B2A41813400EC6986 /* ADDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
