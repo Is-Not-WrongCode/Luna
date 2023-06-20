@@ -23,28 +23,37 @@ struct NavigationDetailView: View {
                             .border(.red)
                             .padding(.trailing, 16)
                         
-                            
                         VStack(alignment: .leading, spacing: 0) {
                             Text(nd.title)
                                 .multilineTextAlignment(.leading)
                                 .font(.system(size: 19))
                             Text("\(nd.place) ⸱ \(nd.timeAgo)")
+                                .font(.system(size: 13))
                             Text(nd.price)
                                 .font(.system(size: 16))
+                            
+                            Spacer()
                             HStack (spacing: 0){
                                 Spacer()
                                 if nd.chatCount > 0 {
                                     Image("ImageIconChat")
+                                        .frame(height: 13.5)
                                         .padding(.trailing, 2)
                                     Text(String(nd.chatCount))
-                                        .padding(.trailing, 4)
+                                        .font(.system(size: 13))
                                 }
+                                    
                                 if nd.heartCount > 0 {
+                                    Spacer()
+                                        .frame(width: 4.75)
                                     Image("ImageIconHeart")
+                                        .frame(height: 13.5)
                                         .padding(.trailing, 2)
                                     Text(String(nd.heartCount))
+                                        .font(.system(size: 13))
+                                        .padding(.trailing, 4)
                                 }
-                            }
+                            } // HStack
                         } // VStack
                         .frame(height: 110)
                         .frame(maxWidth: .infinity)
