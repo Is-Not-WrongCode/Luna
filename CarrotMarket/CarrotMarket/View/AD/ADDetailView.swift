@@ -21,15 +21,15 @@ struct ADDetailView: View {
                 .font(.system(size: 14))
                 .frame(height: 38)
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .border(.blue)
+                //.border(.blue)
             Text(ADPrice)
                 .font(.system(size: 14, weight: .bold))
                 .frame(height: 19)
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .border(.blue)
+                //.border(.blue)
         }
         .frame(width: 108, height: 174, alignment: .leading)
-        .border(.red)
+        //.border(.red)
     }
 }
 

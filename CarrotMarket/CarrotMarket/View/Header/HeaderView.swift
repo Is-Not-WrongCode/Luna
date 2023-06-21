@@ -38,7 +38,7 @@ struct HeaderView: View {
         } //HStack
         .frame(height: 44)
         .frame(maxWidth: .infinity)
-        .border(.red)
+        //.border(.red)
     }
 }
 

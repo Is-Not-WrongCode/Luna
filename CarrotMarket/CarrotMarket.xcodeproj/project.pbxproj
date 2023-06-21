@@ -98,8 +98,8 @@
 		3EBC851C2A3F0B8800EC6986 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3EBC851D2A3F0BA900EC6986 /* NavigationModel.swift */,
 				3EBC85232A40AFCE00EC6986 /* HeaderModel.swift */,
+				3EBC851D2A3F0BA900EC6986 /* NavigationModel.swift */,
 				3EBC852C2A418A1700EC6986 /* ADModel.swift */,
 			);
 			path = Model;
