@@ -11,26 +11,20 @@ struct HeaderView: View {
     @Binding var typeOfPlace: [String]
     @Binding var isPopupPlace: Bool
     @Binding var selectedIndex: Int
-    @State var pickerDegree: Double = 0.0
+    @Binding var pickerDegree: Double
     
     
     var body: some View {
             HStack (spacing: 0){
-                // MARK: Custom Picker 다시 만들어야 함!!!
-                /*
-                 Picker(selection: $selectedIndex) {
-                 ForEach (0..<typeOfPlace.count, id: \.self){ index in
-                 Text(typeOfPlace[index])
-                 }
-                 } label: {
-                 Text(typeOfPlace[0])
-                 }
-                 .pickerStyle(.automatic)*/
-                HStack{
+                Group {
                     Text(typeOfPlace[selectedIndex])
+                        .font(.system(size: 20, weight: .bold))
+                        .padding(.trailing, 4)
+                        
                     Image(systemName: "chevron.down")
+                        .frame(width: 11.68, height: 6.56)
                         .rotationEffect(Angle(degrees: pickerDegree))
-                }
+                } // Group
                 .onTapGesture {
                     isPopupPlace.toggle()
                     withAnimation(.linear(duration: 0.2)){
@@ -38,8 +32,8 @@ struct HeaderView: View {
                     }
                 }
                 
-                
                 Spacer()
+                // 우측 3개의 버튼
                 ForEach(HeaderData) { hd in
                     Button {
                         // action

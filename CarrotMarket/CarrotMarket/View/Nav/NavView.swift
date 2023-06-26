@@ -11,6 +11,8 @@ struct NavView: View {
     @State var typeOfPlace: [String] = ["대현동", "이동", "내 동네 설정하기"]
     @State var selectedIndex: Int = 0
     @State var isPopupPlace: Bool = false
+    @State var pickerDegree: Double = 0.0
+    
     let popupWidth: Double = 200
     let popupHeight: Double = 150
     
@@ -18,7 +20,7 @@ struct NavView: View {
         NavigationView{
             ZStack{
                 VStack {
-                    HeaderView(typeOfPlace: $typeOfPlace, isPopupPlace: $isPopupPlace, selectedIndex: $selectedIndex)
+                    HeaderView(typeOfPlace: $typeOfPlace, isPopupPlace: $isPopupPlace, selectedIndex: $selectedIndex, pickerDegree: $pickerDegree)
                         .padding(.horizontal, 16)
                     
                     NavigationDetailView()
@@ -29,12 +31,18 @@ struct NavView: View {
                         .ignoresSafeArea()
                         .onTapGesture {
                             isPopupPlace.toggle()
-                        }
+                            withAnimation(.linear(duration: 0.2)){
+                                pickerDegree += 180
+                            }
+                        } // onTapGesture - 검정 배경을 Tap하면
                     RoundedRectangle(cornerRadius: 10)
                         .fill(.white)
                         .onTapGesture {
                             isPopupPlace.toggle()
-                        }
+                            withAnimation(.linear(duration: 0.2)){
+                                pickerDegree += 180
+                            }
+                        } // onTapGesture - 흰 RoundedRectangle을 Tap하면
                         .frame(width: popupWidth, height: popupHeight)
                         .overlay {
                             VStack(alignment: .leading, spacing: 16){
@@ -44,12 +52,21 @@ struct NavView: View {
                                         .onTapGesture {
                                             selectedIndex = index
                                             isPopupPlace.toggle()
+                                            withAnimation(.linear(duration: 0.2)){
+                                                pickerDegree += 180
+                                            }
                                         }
                                 }
-                            }
-                        }
-                        .position(x: popupWidth/2 + 20, y: popupHeight/2 + 60)
-                }
+                                //.border(.red)
+                            } // VStack
+                            .frame(maxWidth: .infinity, alignment: .leading)
+                            .padding(.leading, 16)
+                            //.border(.red)
+                        } // overlay
+                        .frame(alignment: .leading)
+                        //.border(.green)
+                        .position(x: popupWidth/2 + 20, y: popupHeight/2 + 55)
+                } // isPopupPlace
             }
         } // NavigationView
     }
