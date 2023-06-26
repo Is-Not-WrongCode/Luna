@@ -8,9 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var tagSelection:Int = 0
+    
     var body: some View {
-            TabView {
-                NavView()
+            TabView(selection: $tagSelection) {
+                    NavView()
                     .tabItem{
                         Image("ImageIcon1")
                         Text("홈")
@@ -19,7 +21,7 @@ struct ContentView: View {
                 
                 Text("동네 생활")
                     .tabItem{
-                        Image("ImageIcon2")
+                        Image(tagSelection == 1 ? "ImageIcon1" :"ImageIcon2")
                         Text("동네생활")
                     }
                     .tag(1)
@@ -47,6 +49,7 @@ struct ContentView: View {
                 
             } // TabView
             .tint(.black)
+            //.toolbarColorScheme(., for: <#T##ToolbarPlacement...##ToolbarPlacement#>)
     }
 }
 
