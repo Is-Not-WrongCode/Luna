@@ -31,12 +31,16 @@ struct NavigationDetailView: View {
                         VStack(alignment: .leading, spacing: 0) {
                             Text(NavigationData[index].title)
                                 .multilineTextAlignment(.leading)
-                                .font(.system(size: 19))
+                                .font(.system(size: 16))
+                                .padding(.trailing, 16)
+                                //.border(.red)
                             Text("\(NavigationData[index].place) ⸱ \(NavigationData[index].timeAgo)")
                                 .font(.system(size: 13))
+                                //.border(.red)
                                 .foregroundColor(Color("ColorGray"))
                             Text(NavigationData[index].price)
                                 .font(.system(size: 16))
+                                //.border(.red)
                             
                             Spacer()
                             HStack (spacing: 0){
@@ -45,6 +49,7 @@ struct NavigationDetailView: View {
                                     Image("ImageIconChat")
                                         .frame(height: 13.5)
                                         .padding(.trailing, 2)
+                                    
                                     Text(String(NavigationData[index].chatCount))
                                         .font(.system(size: 13))
                                 }
@@ -59,14 +64,19 @@ struct NavigationDetailView: View {
                                         .font(.system(size: 13))
                                         .padding(.trailing, 4)
                                 }
+                               
                             } // HStack
                             Divider()
                         } // VStack
                         .frame(height: 110)
                         .frame(maxWidth: .infinity)
+                        
+                        
                         //.border(.blue)
+                        
                     } // HStack
                     .padding(16)
+                    
                     //.border(.red)
                 }
             }

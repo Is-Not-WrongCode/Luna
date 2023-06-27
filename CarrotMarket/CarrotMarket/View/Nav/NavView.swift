@@ -45,26 +45,22 @@ struct NavView: View {
                         } // onTapGesture - 흰 RoundedRectangle을 Tap하면
                         .frame(width: popupWidth, height: popupHeight)
                         .overlay {
-                            VStack(alignment: .leading, spacing: 16){
+                            VStack(alignment: .leading, spacing: 16) {
                                 ForEach(typeOfPlace.indices, id: \.self) { index in
                                     Text(typeOfPlace[index])
-                                        .foregroundColor(index==selectedIndex ? .black : .gray)
+                                        .foregroundColor(index == selectedIndex ? .black : .gray)
                                         .onTapGesture {
                                             selectedIndex = index
                                             isPopupPlace.toggle()
                                             withAnimation(.linear(duration: 0.2)){
                                                 pickerDegree += 180
                                             }
-                                        }
-                                }
-                                //.border(.red)
+                                        } // onTapGesture
+                                } // ForEach
                             } // VStack
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.leading, 16)
-                            //.border(.red)
                         } // overlay
-                        .frame(alignment: .leading)
-                        //.border(.green)
                         .position(x: popupWidth/2 + 20, y: popupHeight/2 + 55)
                 } // isPopupPlace
             }
