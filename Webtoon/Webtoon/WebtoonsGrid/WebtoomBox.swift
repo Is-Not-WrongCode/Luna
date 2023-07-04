@@ -20,10 +20,12 @@ struct WebtoomBox: View {
             HStack (spacing: 0){
                 Text("김경열 / 김동준 / 지태성")
                     .font(.system(size: 8.5))
+                    .lineLimit(1)
                 Spacer()
                 Text("⭐️9.94")
                     .font(.system(size: 8.5))
             }
+            //.layoutPriority(1)
         }
     }
 }

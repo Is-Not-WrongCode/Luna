@@ -23,9 +23,11 @@ struct WebToonsHeader: View {
                             .padding(.vertical, 14)
                     }
                     .foregroundColor(.white)
-                    .background(.black)
+                    
                 }
             } // HStack
+            .frame(maxWidth: .infinity)
+            .background(.black)
         } // ScrollView
        
     }

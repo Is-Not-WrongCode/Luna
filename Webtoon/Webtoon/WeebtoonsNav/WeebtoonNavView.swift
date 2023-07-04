@@ -14,16 +14,17 @@ struct WeebtoonNavView: View {
     
     var body: some View {
         VStack(alignment: .leading, spacing: 0) {
-            NavigationView {
+            
                 navigationLinkCell(cellTitle: "보경님, 이 웹툰들\n최신 이야기를 놓치고 계신 것 같아요!") {
                     Text("네비게이션 링크")
                 }
-            }
+            
             .tint(.black)
             
             ForEach(0..<3) { index in
                 webtoonAD(imageTitle: imageTitle[index], webtoonTitle: weebtoonTitle[index], webtoonMaker: weebtoonMaker[index])
             }
+           
         } // VStack
         .padding(.horizontal, 16)
     }
@@ -37,8 +38,13 @@ struct WeebtoonNavView: View {
             HStack (spacing: 0){
                 Text(cellTitle)
                     .multilineTextAlignment(.leading)
+                    .foregroundColor(.white)
                 Spacer()
             }
+            .frame(maxWidth: .infinity)
+            .frame(height: 80)
+            .border(.red)
+            
         }
     } //: ViewBuilder - NavigationLinkCell
     
@@ -73,6 +79,8 @@ struct WeebtoonNavView: View {
 
 struct WeebtoonNavView_Previews: PreviewProvider {
     static var previews: some View {
-        WeebtoonNavView()
+        NavigationView {
+            WeebtoonNavView()
+        }
     }
 }
