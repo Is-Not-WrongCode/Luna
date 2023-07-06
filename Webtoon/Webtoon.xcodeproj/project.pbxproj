@@ -17,6 +17,7 @@
 		3EE9C9FB2A5318A10069FF81 /* WebToonsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE9C9FA2A5318A10069FF81 /* WebToonsHeader.swift */; };
 		3EE9C9FF2A53201C0069FF81 /* WeebtoonNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE9C9FE2A53201C0069FF81 /* WeebtoonNavView.swift */; };
 		3EE9CA1B2A5696230069FF81 /* ResearchMoreWebtoons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE9CA1A2A5696230069FF81 /* ResearchMoreWebtoons.swift */; };
+		3EEF3BB82A56A91D007EBE16 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EEF3BB72A56A91D007EBE16 /* BannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		3EE9C9FA2A5318A10069FF81 /* WebToonsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebToonsHeader.swift; sourceTree = "<group>"; };
 		3EE9C9FE2A53201C0069FF81 /* WeebtoonNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeebtoonNavView.swift; sourceTree = "<group>"; };
 		3EE9CA1A2A5696230069FF81 /* ResearchMoreWebtoons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchMoreWebtoons.swift; sourceTree = "<group>"; };
+		3EEF3BB72A56A91D007EBE16 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				3E229DBF2A51995E00EDD3EB /* WebtoonApp.swift */,
 				3E229DC12A51995E00EDD3EB /* ContentView.swift */,
 				3EE9C9F42A52EF330069FF81 /* MainView.swift */,
+				3EEF3BB72A56A91D007EBE16 /* BannerView.swift */,
 				3EE9C9FC2A531E790069FF81 /* WebtoonsGrid */,
 				3EE9C9FD2A531FFC0069FF81 /* WeebtoonsNav */,
 				3E229DC32A51995F00EDD3EB /* Assets.xcassets */,
@@ -176,6 +179,7 @@
 				3EE9C9F72A52F5560069FF81 /* WebtoonBox.swift in Sources */,
 				3EE9C9F52A52EF330069FF81 /* MainView.swift in Sources */,
 				3EE9C9FB2A5318A10069FF81 /* WebToonsHeader.swift in Sources */,
+				3EEF3BB82A56A91D007EBE16 /* BannerView.swift in Sources */,
 				3E229DC02A51995E00EDD3EB /* WebtoonApp.swift in Sources */,
 				3EE9CA1B2A5696230069FF81 /* ResearchMoreWebtoons.swift in Sources */,
 				3EE9C9F92A52F9F40069FF81 /* Webtoons.swift in Sources */,
