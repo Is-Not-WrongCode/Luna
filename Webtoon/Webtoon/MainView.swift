@@ -10,10 +10,16 @@ import SwiftUI
 struct MainView: View {
     var body: some View {
         ScrollView{
-            VStack {
+            VStack (spacing: 8){
                 Webtoons()
                 WeebtoonNavView()
+                ResearchMoreWebtoons()
+                Image("footer")
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(maxWidth: .infinity)
             }
+            .background(.black)
         }
     }
 }

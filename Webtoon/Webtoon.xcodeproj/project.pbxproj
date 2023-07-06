@@ -12,10 +12,11 @@
 		3E229DC42A51995F00EDD3EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E229DC32A51995F00EDD3EB /* Assets.xcassets */; };
 		3E229DC72A51996000EDD3EB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3E229DC62A51996000EDD3EB /* Preview Assets.xcassets */; };
 		3EE9C9F52A52EF330069FF81 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE9C9F42A52EF330069FF81 /* MainView.swift */; };
-		3EE9C9F72A52F5560069FF81 /* WebtoomBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE9C9F62A52F5560069FF81 /* WebtoomBox.swift */; };
+		3EE9C9F72A52F5560069FF81 /* WebtoonBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE9C9F62A52F5560069FF81 /* WebtoonBox.swift */; };
 		3EE9C9F92A52F9F40069FF81 /* Webtoons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE9C9F82A52F9F40069FF81 /* Webtoons.swift */; };
 		3EE9C9FB2A5318A10069FF81 /* WebToonsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE9C9FA2A5318A10069FF81 /* WebToonsHeader.swift */; };
 		3EE9C9FF2A53201C0069FF81 /* WeebtoonNavView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE9C9FE2A53201C0069FF81 /* WeebtoonNavView.swift */; };
+		3EE9CA1B2A5696230069FF81 /* ResearchMoreWebtoons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EE9CA1A2A5696230069FF81 /* ResearchMoreWebtoons.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,10 +26,11 @@
 		3E229DC32A51995F00EDD3EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3E229DC62A51996000EDD3EB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3EE9C9F42A52EF330069FF81 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
-		3EE9C9F62A52F5560069FF81 /* WebtoomBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebtoomBox.swift; sourceTree = "<group>"; };
+		3EE9C9F62A52F5560069FF81 /* WebtoonBox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebtoonBox.swift; sourceTree = "<group>"; };
 		3EE9C9F82A52F9F40069FF81 /* Webtoons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webtoons.swift; sourceTree = "<group>"; };
 		3EE9C9FA2A5318A10069FF81 /* WebToonsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebToonsHeader.swift; sourceTree = "<group>"; };
 		3EE9C9FE2A53201C0069FF81 /* WeebtoonNavView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeebtoonNavView.swift; sourceTree = "<group>"; };
+		3EE9CA1A2A5696230069FF81 /* ResearchMoreWebtoons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchMoreWebtoons.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +87,7 @@
 			children = (
 				3EE9C9F82A52F9F40069FF81 /* Webtoons.swift */,
 				3EE9C9FA2A5318A10069FF81 /* WebToonsHeader.swift */,
-				3EE9C9F62A52F5560069FF81 /* WebtoomBox.swift */,
+				3EE9C9F62A52F5560069FF81 /* WebtoonBox.swift */,
 			);
 			path = WebtoonsGrid;
 			sourceTree = "<group>";
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				3EE9C9FE2A53201C0069FF81 /* WeebtoonNavView.swift */,
+				3EE9CA1A2A5696230069FF81 /* ResearchMoreWebtoons.swift */,
 			);
 			path = WeebtoonsNav;
 			sourceTree = "<group>";
@@ -170,10 +173,11 @@
 			files = (
 				3EE9C9FF2A53201C0069FF81 /* WeebtoonNavView.swift in Sources */,
 				3E229DC22A51995E00EDD3EB /* ContentView.swift in Sources */,
-				3EE9C9F72A52F5560069FF81 /* WebtoomBox.swift in Sources */,
+				3EE9C9F72A52F5560069FF81 /* WebtoonBox.swift in Sources */,
 				3EE9C9F52A52EF330069FF81 /* MainView.swift in Sources */,
 				3EE9C9FB2A5318A10069FF81 /* WebToonsHeader.swift in Sources */,
 				3E229DC02A51995E00EDD3EB /* WebtoonApp.swift in Sources */,
+				3EE9CA1B2A5696230069FF81 /* ResearchMoreWebtoons.swift in Sources */,
 				3EE9C9F92A52F9F40069FF81 /* Webtoons.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
