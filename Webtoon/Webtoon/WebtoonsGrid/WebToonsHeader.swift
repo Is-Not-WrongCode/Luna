@@ -27,7 +27,7 @@ struct WebToonsHeader: View {
                 }
             } // HStack
             .frame(maxWidth: .infinity)
-            .background(.black)
+            .background(Color("BgDarkGray"))
         } // ScrollView
        
     }
