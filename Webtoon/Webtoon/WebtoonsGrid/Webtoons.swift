@@ -17,12 +17,16 @@ struct Webtoons: View {
                 // Section 1
                 Section {
                     ForEach(0..<12) { index in
-                        WebtoomBox()
+                        WebtoonBox()
                     }
                 } header: {
+                    Divider()
+                        .foregroundColor(.white)
                     WebToonsHeader()
                 } // : Section 1
             } // LazyVGrid
+            .padding(.horizontal, 15)
+            .background(Color("BgDarkGray"))
         
     }
 }
