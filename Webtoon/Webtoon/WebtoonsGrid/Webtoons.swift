@@ -10,7 +10,9 @@ import SwiftUI
 struct Webtoons: View {
     // column의 갯수를 3개로 지정
     let columns: [GridItem] = [
-        GridItem(.flexible(), spacing: 6, alignment: .center), GridItem(.flexible(), spacing: 6, alignment: .center), GridItem(.flexible(), spacing: 6, alignment: .center)]
+        GridItem(.flexible(), spacing: 6, alignment: .center),
+        GridItem(.flexible(), spacing: 6, alignment: .center),
+        GridItem(.flexible(), spacing: 6, alignment: .center)]
     
     var body: some View {
             LazyVGrid(columns: columns, alignment: .center, spacing: 6, pinnedViews: [.sectionHeaders]) {

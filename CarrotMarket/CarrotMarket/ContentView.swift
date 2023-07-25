@@ -9,7 +9,10 @@ import SwiftUI
 
 struct ContentView: View {
     @State var tagSelection: Int = 0
+    init() {
+    UITabBar.appearance().backgroundColor = UIColor.red
 
+    }
     var body: some View {
             TabView(selection: $tagSelection) {
                     NavView()
